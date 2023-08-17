@@ -1,0 +1,22 @@
+[
+    {
+        "name": "jon",
+        "address": {
+            "city": "berleen",
+            "street": {
+                "name": "fashwell",
+                "number": 101010909
+            }
+        }
+    },
+    {
+        "name": "aingel",
+        "address": {
+            "city": "newyork",
+            "street": {
+                "name": "ziop",
+                "number": 123400576
+            }
+        }
+    }
+]

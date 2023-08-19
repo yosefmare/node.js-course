@@ -25,7 +25,7 @@ const writeJsonFile = async (userId) => {
         tasksTitle: titles
     }
     // console.log(titles);
-    jf.writeFile("./json/tasks.json", [userTasks])
+    jf.writeFile("./exercises/json/tasks.json", [userTasks])
 }
 module.exports = {
     getUserName

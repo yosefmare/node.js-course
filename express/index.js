@@ -11,6 +11,15 @@ app.use('/users', myRoots.router);
 app.use('/businesses', myRoots.router);
 app.use('/schools', myRoots.router);
 
+// routs by id
+app.use('/users/:id', myRoots.router);
+
+app.use('/businesses/:id', myRoots.router);
+
+app.use('/schools/:id', myRoots.router);
+
+
+
 
 const port = process.env.PORT;
 app.listen(port, () => {

@@ -1,0 +1,36 @@
+{
+    "businesses": [
+        {
+            "id": 1,
+            "name": "Example Business 1",
+            "category": "Retail",
+            "address": {
+                "street": "123 Main Street",
+                "city": "Cityville",
+                "state": "ST",
+                "postal_code": "12345"
+            },
+            "contact": {
+                "phone": "123-456-7890",
+                "email": "info@example1.com",
+                "website": "http://www.example1.com"
+            }
+        },
+        {
+            "id": 2,
+            "name": "Sample Services",
+            "category": "Services",
+            "address": {
+                "street": "456 Elm Avenue",
+                "city": "Townsville",
+                "state": "ST",
+                "postal_code": "67890"
+            },
+            "contact": {
+                "phone": "555-555-5555",
+                "email": "info@sampleservices.com",
+                "website": "http://www.sampleservices.com"
+            }
+        }
+    ]
+}

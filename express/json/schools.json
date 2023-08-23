@@ -1,0 +1,36 @@
+{
+    "schools": [
+        {
+            "id": 1,
+            "name": "Example High School",
+            "level": "High School",
+            "address": {
+                "street": "789 Education Drive",
+                "city": "Learningville",
+                "state": "ST",
+                "postal_code": "54321"
+            },
+            "contact": {
+                "phone": "987-654-3210",
+                "email": "info@examplehighschool.com",
+                "website": "http://www.examplehighschool.com"
+            }
+        },
+        {
+            "id": 2,
+            "name": "Elementary Learning Academy",
+            "level": "Elementary School",
+            "address": {
+                "street": "123 School Lane",
+                "city": "Playtown",
+                "state": "ST",
+                "postal_code": "12345"
+            },
+            "contact": {
+                "phone": "555-123-4567",
+                "email": "info@elementarylearning.com",
+                "website": "http://www.elementarylearning.com"
+            }
+        }
+    ]
+}

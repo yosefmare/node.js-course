@@ -30,9 +30,6 @@ const getSchools = async () => {
     }
 }
 
-getSchools()
-
-getBusinesses()
 
 module.exports = {
     getAllUsers,

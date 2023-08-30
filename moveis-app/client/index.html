@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- bootstrap styles link -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+
+    <!-- bootstrap script -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script>
+    <title>Document</title>
+</head>
+
+<body onload="getmoveis()">
+    <div class="container mt-5">
+
+        <!-- Modal to update data -->
+        <div class="modal fade" id="updateData" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header d-flex align-items-center justify-content-center">
+                        <h1 class="modal-title fs-5" id="exampleModalLabel">update data</h1>
+                    </div>
+                    <div class="modal-body container d-flex flex-column gap-4">
+                        <input class="text-center mx-5" type="text" name="" id="newMoveiNameValue"
+                            placeholder="Enter new movei name">
+                        <input class="text-center mx-5" type="text" name="" id="newMoveiDirectorNameValue"
+                            placeholder="Enter new movei director name">
+                        <input class="text-center mx-5" type="text" name="" id="newMoveiPremieredYearValue"
+                            placeholder="Enter new movei premiered year">
+                    </div>
+
+
+                    <div class="modal-footer d-flex justify-content-between">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary" data-bs-dismiss="modal"
+                            onclick="updateData()">update movei</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Modal to add new data -->
+        <div class="modal fade" id="addData" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header d-flex align-items-center justify-content-center">
+                        <h1 class="modal-title fs-5" id="exampleModalLabel">insert movei</h1>
+                    </div>
+                    <div class="modal-body container d-flex flex-column gap-4">
+                        <input class="text-center mx-5" type="text" name="" id="moveiNameValue"
+                            placeholder="Enter movei name">
+                        <input class="text-center mx-5" type="text" name="" id="moveiDirectorNameValue"
+                            placeholder="Enter movei director name">
+                        <input class="text-center mx-5" type="text" name="" id="moveiPremieredYearValue"
+                            placeholder="Enter movei premiered year">
+                    </div>
+
+
+                    <div class="modal-footer d-flex justify-content-between">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary" data-bs-dismiss="modal"
+                            onclick="addNewMovei()">Save movei</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="mb-3 d-flex justify-content-end">
+            <button type="button" class="btn btn-primary rounded-5" data-bs-toggle="modal"
+                data-bs-target="#addData">+</button>
+
+        </div>
+        <table class="table text-center table-dark">
+            <thead>
+                <tr>
+                    <th scope="col">movei name</th>
+                    <th scope="col">movei director</th>
+                    <th scope="col">movei premiered year</th>
+                    <th scope="col">update</th>
+                </tr>
+            </thead>
+            <tbody id="table-body">
+
+            </tbody>
+        </table>
+    </div>
+
+    <script src="./main.js"></script>
+</body>
+
+</html>

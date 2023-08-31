@@ -12,6 +12,8 @@ async function getmoveis() {
         <td>${movei.premieredYear}</td>
         <td><button type="button" class="btn btn-light" moveiId ="${movei._id}" data-bs-toggle="modal"
         data-bs-target="#updateData" onclick = "takeId(this)">update</button></td>
+        <td><button type="button" class="btn btn-danger" moveiId ="${movei._id}"
+        onclick = "deleteData(this)">delete</button></td>
     </tr>
     `
     });
@@ -79,5 +81,15 @@ async function updateData() {
     document.getElementById('newMoveiNameValue').value = "";
     document.getElementById('newMoveiDirectorNameValue').value = "";
     document.getElementById('newMoveiPremieredYearValue').value = "";
+}
 
+async function deleteData(moveiId){
+    const id = moveiId.getAttribute("moveiId")
+    const request = await fetch(`${url}/${id}`, {
+        method: 'Delete',
+    });
+
+    const response = await request.json();
+    console.log("Movie data has been deleted");
+    console.log(response);
 }
